@@ -17,21 +17,45 @@
     </head>
     <body>
         <div class="container">
-            <div class="hero-unit">
+            <div class="hero-unit tabbable tabs-left">
+                 <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#en" data-toggle="tab"><abbr title="English">En</abbr></a>
+                    </li>
+                    <li>
+                        <a href="#fr" data-toggle="tab"><abbr title="Français">Fr</abbr></a>
+                    </li>
+                </ul>
                 <h1 class="text-center"><img src="images/probe-logo.png" alt="Probe Meteo"></h1>
+                <section class="tab-content">
+                    <article id="en" lang="en" class="tab-pane active">
+                        <h2 id="catch-line" class="text-center">
+                            <span class="text-info">Probe</span> is a <strong>meteorological data-visualization software</strong></strong>.
+                        </h2>
+                        <p>Our purpose is to provide an application that simplify <em>data-collection</em> and provide <em>insights</em> to your meteorological records. Our goal is to support Davis Instrument stations and we currently support the <a href="http://www.davisnet.com/weather/products/vantage-pro-professional-weather-stations.asp">Vantage Pro 2</a> model.</p>
+                        <p>We are building Probe with open-source and state-of-the-art technologies to focus on <strong>intuitive interface</strong> :
+                         <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>,
+                         <a href="http://mbostock.github.com/d3/">D3.js</a>,
+                         <a href="http://codeigniter.com/">CodeIgniter</a>,
+                         <a href="http://jquery.com/">jQuery</a>,
+                         <a href="http://nginx.org/">NginX</a>, etc.</p>
+                        <p><span class="text-info">Probe</span class="text-info"> use cross-platform stack, making it available on various environment (<strong>UNIX, Linux, Mac, Windows, etc.)</strong>.</p>
+                    </article>
 
-                <h2 id="catch-line" class="text-center">
-                    <span class="text-info">Probe</span> est un logiciel de <strong>visualisation de données météorologiques</strong>.
-                </h2>
-
-                <p>L'application permet de collecter et de visualiser &ndash; de façon simple et élégante &ndash; les données issuent de station météo Davis Instrument (<a href="http://www.davisnet.com/weather/products/vantage-pro-professional-weather-stations.asp">Vantage Pro 2</a>).</p>
-                <p>Le projet s'appuie sur des technologies libres et modernes pour fournir une <strong>utilisation intuitive</strong> :
-                 <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>,
-                 <a href="http://mbostock.github.com/d3/">D3.js</a>,
-                 <a href="http://codeigniter.com/">CodeIgniter</a>,
-                 <a href="http://jquery.com/">jQuery</a>,
-                 <a href="http://nginx.org/">NginX</a>, etc.</p>
-                <p>L'application est basé sur des logiciels multi-plateforme. Rendant de ce fait <span class="text-info">Probe</span class="text-info"> portable sur <strong>Linux, Mac, Windows, etc.</strong></p>
+                    <article id="fr" lang="fr" class="tab-pane fade">
+                        <h2 id="catch-line" class="text-center">
+                            <span class="text-info">Probe</span> est un logiciel de <strong>visualisation de données météorologiques</strong>.
+                        </h2>
+                        <p>L'application permet de collecter et de visualiser &ndash; de façon simple et élégante &ndash; les données issuent de station météo Davis Instrument (<a href="http://www.davisnet.com/weather/products/vantage-pro-professional-weather-stations.asp">Vantage Pro 2</a>).</p>
+                        <p>Le projet s'appuie sur des technologies libres et modernes pour fournir une <strong>utilisation intuitive</strong> :
+                         <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>,
+                         <a href="http://mbostock.github.com/d3/">D3.js</a>,
+                         <a href="http://codeigniter.com/">CodeIgniter</a>,
+                         <a href="http://jquery.com/">jQuery</a>,
+                         <a href="http://nginx.org/">NginX</a>, etc.</p>
+                        <p>L'application est basé sur des logiciels multi-plateforme. Rendant de ce fait <span class="text-info">Probe</span class="text-info"> portable sur <strong>Linux, Mac, Windows, etc.</strong></p>
+                    </article>
+                </section>
 
                 <h4 id="footer" class="text-right">
                     <a href="https://twitter.com/ProbeMeteo" class="btn-ico">
@@ -64,6 +88,8 @@
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
+         <!-- build:js scripts/plugins.js -->
+         <script src="components/sass-bootstrap/js/bootstrap-tab.js"></script>
         <!-- build:js(.tmp) scripts/coffee.js -->
         <script src="scripts/hello.js"></script>
         <!-- endbuild -->
