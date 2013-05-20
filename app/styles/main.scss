@@ -21,11 +21,15 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
   margin-top: 1em;
 }
 
-.btn-ico {
+.btn-ico
+,.FlattrButton
+{
   margin-right: 1em;
   float: right;
 }
-.gh-ico, .tw-ico {
+.gh-ico
+, .tw-ico
+{
   float: left;
 }
 .gh-ico {
