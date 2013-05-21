@@ -2,10 +2,11 @@ $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import 'sass-bootstrap/lib/responsive';
 
 .hero-unit {
-  width: 40em;
   margin: 1em auto 0 auto;
+  max-width: 40em;
   padding: 1em 2em 1em;
 }
 
