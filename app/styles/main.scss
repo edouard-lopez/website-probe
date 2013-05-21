@@ -4,9 +4,9 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import 'sass-bootstrap/lib/bootstrap';
 
 .hero-unit {
-  margin: 1.5em auto 0 auto;
   width: 40em;
-  padding: 1em 2em 3em;
+  margin: 1em auto 0 auto;
+  padding: 1em 2em 1em;
 }
 
 .tabs-left {
@@ -15,7 +15,10 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
     margin-left: -2em;
     > li {
       margin-left: -2.5em;
-      width: 2em;
+      width: 2.5em;
+      &.active > a {
+        background-color: $grayLighter;
+      }
       > a {
         min-width: 1em;
       }
@@ -25,6 +28,8 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 .hero-unit>h1 {
   margin-bottom: .25em;
+  background-color: $white;
+  border-radius: $baseBorderRadius;
 }
 
 .hero-unit>#catch-line {
@@ -32,7 +37,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 }
 
 .hero-unit>#footer {
-  margin-top: 1em;
+  // margin-top: 1em;
 }
 
 .btn-ico
