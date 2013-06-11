@@ -62,7 +62,7 @@ module.exports = function (grunt) {
             options: {
                 port: 9002,
                 // change this to '0.0.0.0' to access the server from outside
-                hostname: 'localhost'
+                hostname: 'probe-meteo.dev'
             },
             livereload: {
                 options: {
@@ -97,7 +97,7 @@ module.exports = function (grunt) {
         },
         open: {
             server: {
-                path: 'http://localhost:<%= connect.options.port %>'
+                path: 'http://probe-meteo.dev:<%= connect.options.port %>'
             }
         },
         clean: {
@@ -128,7 +128,7 @@ module.exports = function (grunt) {
             all: {
                 options: {
                     run: true,
-                    urls: ['http://localhost:<%= connect.options.port %>/index.html']
+                    urls: ['http://probe-meteo.dev:<%= connect.options.port %>/index.html']
                 }
             }
         },
