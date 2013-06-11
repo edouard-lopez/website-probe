@@ -44,6 +44,13 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ],
                 tasks: ['livereload']
+            },
+            copyPhp: {
+                files: [
+                    '<%= yeoman.app %>/*.php',
+                ],
+                tasks: ['copy:php']
+            },
             }
         },
         connect: {
@@ -254,9 +261,21 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>',
                     src: [
                         '*.{ico,txt}',
+                        '*.{php,phpc}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/*'
+                    ]
+                }]
+            },
+            php: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>',
+                    dest: '<%= yeoman.dist %>',
+                    src: [
+                        '*.{php,phpc}',
                     ]
                 }]
             }
