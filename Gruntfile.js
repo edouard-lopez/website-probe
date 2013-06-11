@@ -51,6 +51,11 @@ module.exports = function (grunt) {
                 ],
                 tasks: ['copy:php']
             },
+            copyCss: {
+                files: [
+                    '.tmp/styles/{,*/}*.css',
+                ],
+                tasks: ['copy:resources']
             }
         },
         connect: {
@@ -276,6 +281,17 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>',
                     src: [
                         '*.{php,phpc}',
+                    ]
+                }]
+            },
+            resources: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '.tmp',
+                    dest: '<%= yeoman.dist %>',
+                    src: [
+                        'styles/{,*/}*.css',
                     ]
                 }]
             }
