@@ -24,7 +24,8 @@ function gallery($dir)
     $active = ' active';
     $scannedDir = scandir($dir);
     $imagesList = array_filter($scannedDir, 'imageOnly');
-    $sz = 12; // default span
+    define('GRID_BLOCKS', 12); // default span
+    $sz = GRID_BLOCKS;
     $minSz = 2;
     $step = 4;
     // var_dump($imagesList);
@@ -37,6 +38,7 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam…
 LOREM;
 
         $imgUrl = sprintf("%s/%s", $dir, $file);
+        $sz = (($sz > $minSz and $sz > $step) ? $sz-$step: GRID_BLOCKS);
         ?>
         <li class="span<?=$sz?>">
             <div class="thumbnail<?=$active; $active=null; ?>">
@@ -50,6 +52,5 @@ LOREM;
             </div>
         </li>
     <?php
-        $sz = ($sz > $minSz ? $sz-$step: $sz);
     endforeach;
 }
