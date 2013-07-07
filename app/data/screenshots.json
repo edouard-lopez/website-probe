@@ -1,0 +1,68 @@
+[
+{
+	"url": "app/images/assets/screenshosts/hairy-chart-no-tooltip.png",
+	"title": {
+		"en": "wind rose",
+		"fr": "FR:wind rose"
+	},
+	"long-desc": {
+		"en": "desc wind rose",
+		"fr": "fr:desc wind rose"
+	}
+},
+{
+	"url": "app/images/assets/screenshosts/hairy-chart.png",
+	"title": {
+		"en": "wind rose",
+		"fr": "FR:wind rose"
+	},
+	"long-desc": {
+		"en": "desc wind rose",
+		"fr": "fr:desc wind rose"
+	}
+},
+{
+	"url": "app/images/assets/screenshosts/pressure-as-a-candlestick-chart.png",
+	"title": {
+		"en": "wind rose",
+		"fr": "FR:wind rose"
+	},
+	"long-desc": {
+		"en": "desc wind rose",
+		"fr": "fr:desc wind rose"
+	}
+},
+{
+	"url": "app/images/assets/screenshosts/rainfall-as-a-cumulative-bar-chart.png",
+	"title": {
+		"en": "wind rose",
+		"fr": "FR:wind rose"
+	},
+	"long-desc": {
+		"en": "desc wind rose",
+		"fr": "fr:desc wind rose"
+	}
+},
+{
+	"url": "app/images/assets/screenshosts/wind-rose-history.png",
+	"title": {
+		"en": "wind rose",
+		"fr": "FR:wind rose"
+	},
+	"long-desc": {
+		"en": "desc wind rose",
+		"fr": "fr:desc wind rose"
+	}
+},
+{
+	"url": "app/images/assets/screenshosts/wind-rose.png",
+	"title": {
+		"en": "wind rose",
+		"fr": "FR:wind rose"
+	},
+	"long-desc": {
+		"en": "desc wind rose",
+		"fr": "fr:desc wind rose"
+	}
+},
+]
