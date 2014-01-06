@@ -15,7 +15,7 @@ L'ajout de _screenshots_ à la gallery se fait de la façon suivante:
     probe-meteo/
     ├── images
     │   └── assets
-    │       └── screenshosts
+    │       └── screenshots
 ```
 Une fois transférer, vous pouvez consulter la [page des screenshots](http://probe-meteo.com/screenshots.php).
 

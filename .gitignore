@@ -3,6 +3,7 @@ dist
 .tmp
 .sass-cache
 app/components
+app/bower_components
 temp
 .directory
 .idea

@@ -1,9 +1,17 @@
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
-@import '../components/sass-bootstrap/lib/bootstrap';
-@import '../components/sass-bootstrap/lib/responsive';
+@import 'bootstrap-sass/lib/bootstrap';
+@import 'bootstrap-sass/lib/responsive-utilities';
 @import 'screenshots';
+
+
+@mixin border-radius($radius) {
+    @include border-top-radius($radius);
+    @include border-right-radius($radius);
+    @include border-bottom-radius($radius);
+    @include border-left-radius($radius);
+}
 
 .hero-unit {
   margin: 1em auto 0 auto;
@@ -19,7 +27,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
       margin-left: -2.5em;
       width: 2.5em;
       &.active > a {
-        background-color: $grayLighter;
+        background-color: $gray-lighter;
       }
       > a {
         min-width: 1em;
@@ -30,8 +38,8 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 .hero-unit>h1 {
   margin-bottom: .25em;
-  background-color: $white;
-  border-radius: $baseBorderRadius;
+  background-color: $body-bg;
+  border-radius: $border-radius-base;
 }
 
 .hero-unit>#catch-line {
@@ -87,7 +95,7 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
        {
         > a {
           margin-right: auto;
-          border-color: $tableBorder;
+          border-color: $table-border-color;
           @include border-radius(4px);
         }
       }

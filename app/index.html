@@ -5,17 +5,25 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Probe: data-visualization for meteorological station</title>
         <meta name="description" content="Probe: data-visualization software for meteorological station">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style/bootstrap-responsive.css" rel="stylesheet">
-            <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
-        <div class="container">
-            <div class="hero-unit tabbable tabs-left">
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+   <div class="container">
+            <div class="jumbotron tabbable tabs-left">
                  <ul class="nav nav-tabs">
                     <li class="active">
                         <a href="#en" data-toggle="tab" lang="en"><abbr title="English">En</abbr></a>
@@ -69,38 +77,18 @@
             </div>
         </div>
 
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
 
         <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-39489032-3', 'probe-meteo.com');
-          ga('send', 'pageview');
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-39489032-3');ga('send','pageview');
         </script>
 
         <!-- build:js scripts/main.js -->
-        <script src="components/jquery/jquery.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-
-         <!-- build:js scripts/plugins.js -->
-         <script src="components/sass-bootstrap/js/bootstrap-tab.js"></script>
-        <!-- endbuild -->
-
-        <script type="text/javascript">
-        /* <![CDATA[ */
-            (function() {
-                var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-                s.type = 'text/javascript';
-                s.async = true;
-                s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-                t.parentNode.insertBefore(s, t);
-            })();
-        /* ]]> */</script>
 </body>
 </html>
