@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
     // load all grunt tasks
     require('load-grunt-tasks')(grunt);
+    grunt.loadNpmTasks('grunt-contrib-handlebars');
 
     grunt.initConfig({
         // configurable paths
@@ -19,7 +20,21 @@ module.exports = function (grunt) {
             app: 'app',
             dist: 'dist'
         },
+        handlebars: {
+            compile: {
+                options: {
+                    namespace: 'myApp.Templates'
+                },
+                files: {
+                    '<%= yeoman.app %>/scripts/screenshots.hbs.js': '<%= yeoman.app %>/templates/screenshots.hbs',
+                    '.tmp/scripts/screenshots.hbs.js': '<%= yeoman.app %>/templates/{,*/}*.hbs'
+                }
+            }
+        },
         watch: {
+            handlebarsTemplates: {
+                files: ['<%= yeoman.app %>/templates/{,*/}*.hbs'],
+                tasks: ['handlebars:compile', 'connect:livereload']
             },
             compass: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
@@ -307,6 +322,7 @@ module.exports = function (grunt) {
             'clean:server',
             'concurrent:server',
             'autoprefixer',
+            'handlebars:compile',
             'connect:livereload',
             'watch'
         ]);
@@ -316,6 +332,7 @@ module.exports = function (grunt) {
       grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
       grunt.task.run(['serve']);
     });
+
     grunt.registerTask('test', [
         'clean:server',
         'concurrent:test',

@@ -1,0 +1,15 @@
+<ul class="thumbnails row">
+    {{#each screenshots}}
+    <li class="col-md-{{item-size}}">
+        <div class="thumbnail active">
+            <a href="/{{url.img-full}}">
+                <img alt="{{localize title}}" title="{{localize title}}" src="/{{url.img-full}}">
+            </a>
+            <div class="caption">
+                <h3 class="title">{{localize title}}</h3>
+                <p>{{localize long-desc}}</p>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</ul>

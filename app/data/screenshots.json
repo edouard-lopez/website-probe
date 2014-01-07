@@ -1,68 +1,94 @@
-[
 {
-	"url": "app/images/assets/screenshosts/hairy-chart-no-tooltip.png",
-	"title": {
-		"en": "wind rose",
-		"fr": "FR:wind rose"
+	"screenshots": [
+	{
+        "item-size": 3,
+		"url": {
+			"img-full": "images/assets/screenshots/hairy-chart-no-tooltip.png",
+			"img-thumb": "images/assets/screenshots/hairy-chart-no-tooltip-thumb.png"
+		},
+		"title": {
+			"en": "Wind barb (hairy) Chart without Tooltip",
+			"fr": "Histogramme vectoriel"
+		},
+		"long-desc": {
+			"en": "Show the direction and strength of the wind on a time axis. The red bar is the one currently hovered",
+			"fr": "Indique la direction et la force du vent sur un axe temporel. La flèche rouge est celle survolée"
+		}
 	},
-	"long-desc": {
-		"en": "desc wind rose",
-		"fr": "fr:desc wind rose"
-	}
-},
-{
-	"url": "app/images/assets/screenshosts/hairy-chart.png",
-	"title": {
-		"en": "wind rose",
-		"fr": "FR:wind rose"
+	{
+        "item-size": 6,
+		"url": {
+			"img-full": "images/assets/screenshots/hairy-chart.png",
+			"img-thumb": "images/assets/screenshots/hairy-chart-thumb.png"
+		},
+		"title": {
+			"en": "English Title",
+			"fr": "Titre français"
+		},
+		"long-desc": {
+			"en": "English description",
+			"fr": "Description français"
+		}
 	},
-	"long-desc": {
-		"en": "desc wind rose",
-		"fr": "fr:desc wind rose"
-	}
-},
-{
-	"url": "app/images/assets/screenshosts/pressure-as-a-candlestick-chart.png",
-	"title": {
-		"en": "wind rose",
-		"fr": "FR:wind rose"
+	{
+        "item-size": 3,
+		"url": {
+			"img-full": "images/assets/screenshots/pressure-as-a-candlestick-chart.png",
+			"img-thumb": "images/assets/screenshots/pressure-as-a-candlestick-chart-thumb.png"
+		},
+		"title": {
+			"en": "English Title",
+			"fr": "Titre français"
+		},
+		"long-desc": {
+			"en": "English description",
+			"fr": "Description français"
+		}
 	},
-	"long-desc": {
-		"en": "desc wind rose",
-		"fr": "fr:desc wind rose"
-	}
-},
-{
-	"url": "app/images/assets/screenshosts/rainfall-as-a-cumulative-bar-chart.png",
-	"title": {
-		"en": "wind rose",
-		"fr": "FR:wind rose"
+	{
+        "item-size": 8,
+		"url": {
+			"img-full": "images/assets/screenshots/rainfall-as-a-cumulative-bar-chart.png",
+			"img-thumb": "images/assets/screenshots/rainfall-as-a-cumulative-bar-chart-thumb.png"
+		},
+		"title": {
+			"en": "English Title",
+			"fr": "Titre français"
+		},
+		"long-desc": {
+			"en": "English description",
+			"fr": "Description français"
+		}
 	},
-	"long-desc": {
-		"en": "desc wind rose",
-		"fr": "fr:desc wind rose"
-	}
-},
-{
-	"url": "app/images/assets/screenshosts/wind-rose-history.png",
-	"title": {
-		"en": "wind rose",
-		"fr": "FR:wind rose"
+	{
+        "item-size": 4,
+		"url": {
+			"img-full": "images/assets/screenshots/wind-rose-history.png",
+			"img-thumb": "images/assets/screenshots/wind-rose-history-thumb.png"
+		},
+		"title": {
+			"en": "English Title",
+			"fr": "Titre français"
+		},
+		"long-desc": {
+			"en": "English description",
+			"fr": "Description français"
+		}
 	},
-	"long-desc": {
-		"en": "desc wind rose",
-		"fr": "fr:desc wind rose"
+	{
+        "item-size": 6,
+		"url": {
+			"img-full": "images/assets/screenshots/wind-rose.png",
+			"img-thumb": "images/assets/screenshots/wind-rose-thumb.png"
+		},
+		"title": {
+			"en": "English Title",
+			"fr": "Titre français"
+		},
+		"long-desc": {
+			"en": "English description",
+			"fr": "Description français"
+		}
 	}
-},
-{
-	"url": "app/images/assets/screenshosts/wind-rose.png",
-	"title": {
-		"en": "wind rose",
-		"fr": "FR:wind rose"
-	},
-	"long-desc": {
-		"en": "desc wind rose",
-		"fr": "fr:desc wind rose"
-	}
-},
-]
+	]
+}

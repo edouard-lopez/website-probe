@@ -1,22 +1,32 @@
-#gallery {
-  .hero-unit {
-    background-color: #fff;
+// @import 'bootstrap-sass/lib/bootstrap';
+// @import 'bootstrap-sass/lib/responsive-utilities';
+
+.jumbotron {
+    background-color: $body-bg;
     max-width: 100%;
     width: 100%;
-  }
+    p {
+        font-size: $font-size-base;
+    }
+}
+
+.thumbnails {
+    >li {
+        @extend .list-unstyled;
+    }
   .thumbnail {
     img {
       margin: 0 auto;
       display: block;
+      width: 100%;
     }
     .caption {
-      background: $grayLighter;
+      background: $gray-lighter;
       .title {
-        font-size : $fontSizeLarge;
+        // font-size : $font-size-large;
         margin: 0 0 0.25em;
         padding-top: 0;
       }
     }
   }
 }
-
