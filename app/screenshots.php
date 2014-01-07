@@ -18,7 +18,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Screenshots ‹ Probe</title>
-        <meta name="description" content="screenshosts for data-visualization software for meteorological station Probe">
+        <meta name="description" content="screenshots for data-visualization software for meteorological station Probe">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style/bootstrap-responsive.css" rel="stylesheet">
             <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -31,7 +31,7 @@
             <ul class="thumbnails row">
             <?php
                 require_once './gallery.php';
-                define('SCREENSHOTS_DIR', 'images/assets/screenshosts');
+                define('SCREENSHOTS_DIR', 'images/assets/screenshots');
                 gallery(SCREENSHOTS_DIR);
             ?>
             </ul>
@@ -42,7 +42,7 @@
         <![endif]-->
 
         <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (function (i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function () {
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -62,7 +62,7 @@
 
 <!--        <script type="text/javascript">-->
 <!--        /* <![CDATA[ */-->
-<!--            (function() {-->
+<!--            (function () {-->
 <!--                var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];-->
 <!--                s.type = 'text/javascript';-->
 <!--                s.async = true;-->
