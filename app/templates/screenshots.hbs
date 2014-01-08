@@ -1,8 +1,8 @@
 <ul class="thumbnails row">
     {{#each screenshots}}
     <li class="col-md-{{item-size}}">
-        <div class="thumbnail active">
-            <a href="/{{url.img-full}}">
+        <div class="thumbnail">
+            <a href="/{{url.img-full}}" data-lightbox="shots"  title="{{localize title}}">
                 <img alt="{{localize title}}" title="{{localize title}}" src="/{{url.img-full}}">
             </a>
             <div class="caption">
