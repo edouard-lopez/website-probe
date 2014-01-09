@@ -8,11 +8,10 @@ HeaderColumnWidths=293,70,128
 ShowPreview=false
 SortOrder=0
 Sorting=6
-Timestamp=2013,6,8,22,19,21
+Timestamp=2014,1,6,15,3,42
 Version=3
 ViewMode=1
 VisibleRoles=Details_text,Details_size,Details_date,Details_permissions,Details_owner,Details_group,CustomizedDetails
 
 [Settings]
-HiddenFilesShown=true
 ShowDotFiles=true
