@@ -1,8 +1,9 @@
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
-@import 'bootstrap-sass/lib/bootstrap';
-@import 'bootstrap-sass/lib/responsive-utilities';
+@import 'sass-bootstrap/lib/bootstrap';
+@import 'sass-bootstrap/lib/responsive-utilities';
+@import 'tabs-position';
 @import 'screenshots';
 
 
