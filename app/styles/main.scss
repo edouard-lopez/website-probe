@@ -7,6 +7,13 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 @import 'screenshots';
 
 
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
 @mixin border-radius($radius) {
     @include border-top-radius($radius);
     @include border-right-radius($radius);
@@ -16,40 +23,52 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
 .jumbotron {
   margin: 1em auto 0 auto;
-  max-width: 40em;
-  padding: 1em 2em 1em;
+  max-width: 45em;
+  @include border-radius($border-radius-base);
+  font-size: $font-size-large;
+  &, & p {
+    line-height: $line-height-computed*1.5;
+    }
+  .container & {
+    padding: .75em 1.5em 2em;
+  }
+
+    >h1 {
+      margin-bottom: .25em;
+      background-color: $body-bg;
+    }
+
+    >#catch-line {
+      margin-bottom: 1em;
+    }
+
+    >#footer {
+      // margin-top: 1em;
+    }
 }
 
 .tabs-left {
-  > .nav-tabs {
-    border-right: none;
-    margin-left: -2em;
-    > li {
-      margin-left: -2.5em;
-      width: 2.5em;
-      &.active > a {
-        background-color: $gray-lighter;
+      > .nav-tabs {
+        border-right: none;
+        margin-left: -1.5em;
+        > li {
+          margin-left: -2.5em;
+          width: 2.5em;
+          &.active > a {
+            background-color: $gray-lighter;
+          }
+          > a {
+            line-height: 1;
+            min-width: 1em;
+          }
+        }
       }
-      > a {
-        min-width: 1em;
+      > .tab-content {
+        h2 {
+            margin: 1.5em auto 1em;
+        }
       }
     }
-  }
-}
-
-    >h1 {
-  margin-bottom: .25em;
-  background-color: $body-bg;
-  border-radius: $border-radius-base;
-}
-
-    >#catch-line {
-  margin-bottom: 1em;
-}
-
-    >#footer {
-  // margin-top: 1em;
-}
 
 .btn-ico
 ,.FlattrButton
