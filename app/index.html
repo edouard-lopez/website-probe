@@ -10,15 +10,14 @@
     <meta name="description" content="Probe: data-visualization software for meteorological station">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="bower_components/jquery/jquery.js"></script>
-    <!-- endbuild -->
 </head>
 <body>
 <!--[if lt IE 10]>
@@ -41,7 +40,7 @@
                 <h2 id="catch-line" class="text-center">
                     <span class="text-info">Probe</span> is a <strong> meteorological data-visualization software</strong></strong>.
                 </h2>
-                <p>Our purpose is to provide an application that simplify <em>data-collection</em> and provide <em>insights</em> to your meteorological records (<a href="/screenshots.html#/en">check-out some screenshots!</a>). We currently support the <a href="http://www.davisnet.com/weather/products/vantage-pro-professional-weather-stations.asp">Vantage Pro 2</a> model, and wish to support others Davis Instrument's models.</p>
+                <p>Our purpose is to provide an application that simplify <em>data-collection</em> and provide <em>insights</em> to your meteorological records (<a href="./screenshots.html#/en">check-out some screenshots!</a>). We currently support the <a href="http://www.davisnet.com/weather/products/vantage-pro-professional-weather-stations.asp">Vantage Pro 2</a> model, and wish to support others Davis Instrument's models.</p>
                 <p>We are building Probe with open-source and state-of-the-art technologies to focus on <strong>intuitive interface</strong> :
                  <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>,
                  <a href="http://mbostock.github.com/d3/">D3.js</a>,
@@ -55,7 +54,7 @@
                 <h2 id="catch-line" class="text-center">
                     <span class="text-info">Probe</span> est un logiciel de <strong>visualisation de données météorologiques</strong>.
                 </h2>
-                <p>L'application permet de collecter et de visualiser &ndash; de façon simple et élégante &ndash; les données issues de station météo Davis Instrument (<a href="http://www.davisnet.com/weather/products/vantage-pro-professional-weather-stations.asp">Vantage Pro 2</a>). Voir quelques <a href="/screenshots.html#/fr">captures d'écrans !</a></p>
+                <p>L'application permet de collecter et de visualiser &ndash; de façon simple et élégante &ndash; les données issues de station météo Davis Instrument (<a href="http://www.davisnet.com/weather/products/vantage-pro-professional-weather-stations.asp">Vantage Pro 2</a>). Voir quelques <a href="./screenshots.html#/fr">captures d'écrans !</a></p>
                 <p>Le projet s'appuie sur des technologies libres et modernes pour fournir une <strong>utilisation intuitive</strong> :
                  <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>,
                  <a href="http://mbostock.github.com/d3/">D3.js</a>,
@@ -81,6 +80,16 @@
 </div>
 
 
+        </div>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -93,6 +102,7 @@
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
+
 <!-- build:js scripts/plugins.js -->
 <script src="bower_components/sass-bootstrap/js/tab.js"></script>
 <!-- endbuild -->
