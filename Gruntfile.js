@@ -71,10 +71,9 @@ module.exports = function (grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '<%= yeoman.app %>/*.html',
-                    '<%= yeoman.app %>/data/{,*/}*.json',
+                    '<%= yeoman.app %>/{,*/}*.html',
+					'<%= yeoman.app %>/data/{,*/}*.json',
                     '.tmp/styles/{,*/}*.css',
-                    '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{gif,jpeg,jpg,png,svg,webp}'
                 ]
             }
@@ -241,6 +240,8 @@ module.exports = function (grunt) {
             html: ['<%= yeoman.dist %>/{,*/}*.html'],
             css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
         },
+
+        // The following *-min tasks produce minified files in the dist folder
         imagemin: {
             dist: {
                 files: [{
@@ -323,6 +324,9 @@ module.exports = function (grunt) {
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
 						'bower_components/sass-bootstrap/fonts/*.*',
+						'scripts/{,*/}*.hbs.js',
+						'data/{,*}/*.json',
+                        'images/assets/{,*/}*.png'
                     ]
                 }]
             },
@@ -334,6 +338,7 @@ module.exports = function (grunt) {
                 src: '{,*/}*.css'
             }
         },
+
 
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
@@ -365,6 +370,7 @@ module.exports = function (grunt) {
             ]
         }
     });
+
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
@@ -406,6 +412,7 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
+		'handlebars:compile',
         'concat',
         'cssmin',
         'uglify',
