@@ -1,5 +1,6 @@
 {
   "name": "website-probe",
+  "private": true,
   "version": "0.0.2",
   "dependencies": {
     "modernizr": "~2.6.2",
