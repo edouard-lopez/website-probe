@@ -41,8 +41,8 @@
 			"fr": "Graphique en Chandelier Japonais représentant la Pression"
 		},
 		"long-desc": {
-			"en": "Candlestick chart allow to quickly see the range of movement of a given measure across time.",
-			"fr": "Le graphique en <em>Chandelier Japonais</em> permet d'avoir un aperçu rapide de la variation d'une mesure au cours du temps. Si la valeur de cloture est supérieure à celle de début, alors le corps blanc ou vide."
+			"en": "Candlestick chart allow to quickly see the range of movement of a given measure across time.  If the measure closed higher than it opened <em>(increase), the body is white or unfilled</em> ; If the measure closed lower than it opened <em>(decrease), the body is black</em>.",
+			"fr": "Le graphique en <em>Chandelier Japonais</em> permet d'avoir un aperçu rapide de la variation d'une mesure au cours du temps. Si la mesure cloture à une valeur supérieure à celle de d'ouverture <em>(augmentation), alors le corps est blanc ou vide</em> ; Si la mesure cloture à une valeur inférieure à celle de d'ouverture <em>(diminution), alors le corps est noire ou plein</em>."
 		}
 	},
 	{
