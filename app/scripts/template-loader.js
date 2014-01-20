@@ -4,11 +4,11 @@ $(function(){
     'use strict';
     var compiledTemplate = myApp.Templates['app/templates/screenshots.hbs'];
 
-    $('.screenshot').each(function(i, sheet){
-        var url = $(sheet).data('json');
+    $('.screenshot').each(function(i, hook){
+        var url = $(hook).data('json');
         $.getJSON(url).then(function (json) {
             var tpl = compiledTemplate( json );
-            $(sheet).html(tpl);
+            $(hook).html(tpl);
         });
     });
 });
