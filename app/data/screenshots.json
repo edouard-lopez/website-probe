@@ -26,8 +26,8 @@
             "fr": "Info-bulle sur l'histogramme vectoriel"
         },
         "long-desc": {
-            "en": "Tooltip given more precise value such as <em>average speed, <em>average direction</em> and <em>measure timestamp</em>.",
-            "fr": "L'info-bulle donne des informations plus précise comme la </em>vitesse moyenne</em>, l'<em>orientation moyenne</em> et la <em>date de la mesure</em>."
+            "en": "Tooltip given more precise value such as <em>average speed</em>, <em>average direction</em> and <em>measure timestamp</em>.",
+            "fr": "L'info-bulle donne des informations plus précise comme la <em>vitesse moyenne</em>, l'<em>orientation moyenne</em> et la <em>date de la mesure</em>."
         }
 	},
 	{
