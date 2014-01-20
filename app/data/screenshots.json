@@ -21,14 +21,14 @@
 			"img-full": "images/assets/screenshots/hairy-chart.png",
 			"img-thumb": "images/assets/screenshots/hairy-chart-thumb.png"
 		},
-		"title": {
-			"en": "English Title",
-			"fr": "Titre français"
-		},
-		"long-desc": {
-			"en": "English description",
-			"fr": "Description français"
-		}
+        "title": {
+            "en": "Tooltip on the Wind barb (hairy) Chart",
+            "fr": "Info-bulle sur l'histogramme vectoriel"
+        },
+        "long-desc": {
+            "en": "Tooltip given more precise value such as <em>average speed, <em>average direction</em> and <em>measure timestamp</em>.",
+            "fr": "L'info-bulle donne des informations plus précise comme la </em>vitesse moyenne</em>, l'<em>orientation moyenne</em> et la <em>date de la mesure</em>."
+        }
 	},
 	{
         "item-size": 3,
