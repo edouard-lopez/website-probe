@@ -41,7 +41,7 @@
 			"fr": "Graphique en Chandelier Japonais représentant la Pression"
 		},
 		"long-desc": {
-			"en": "Pressure as a Candlestick Chart",
+			"en": "Candlestick chart allow to quickly see the range of movement of a given measure across time.",
 			"fr": "Description français"
 		}
 	},
