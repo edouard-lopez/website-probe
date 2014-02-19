@@ -1,5 +1,20 @@
 {
 	"screenshots": [
+		{
+        "item-size": 3,
+		"url": {
+			"img-full": "images/assets/screenshots/admin-login.png",
+			"img-thumb": "images/assets/screenshots/admin-login-thumb.png"
+		},
+		"title": {
+			"en": "Authentication page",
+			"fr": "Page Authentication"
+		},
+		"long-desc": {
+			"en": "The screen allow to connect to the back-end.",
+			"fr": "Écran permettant de se connecter a l'écran d'accueil."
+		}
+	},
 	{
         "item-size": 3,
 		"url": {
